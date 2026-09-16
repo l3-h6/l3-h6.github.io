@@ -101,13 +101,11 @@ export const Experience = (props: SectionProps) => {
               isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-600'
             }`}
           >
-            Architect and maintain scalable backend services, stateful workflows, data engineering
-            pipelines, Linux &amp; Kubernetes infrastructure, and agentic AI integrations across
-            healthcare procurement, ERP, medical equipment servicing, and reporting domains.
+            Architect scalable healthcare ERP backends, distributed data pipelines, and agentic AI systems for a team of 5–6 engineers.
           </p>
 
           <ul
-            className={`space-y-2.5 font-sans text-xs sm:text-sm list-none ${
+            className={`space-y-2 font-sans text-xs sm:text-sm list-none ${
               isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-600'
             }`}
           >
@@ -120,8 +118,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Engineered resilient service order workflows as deterministic state machines with
-                strict business validation.
+                Architected distributed healthcare platforms, Apache Flink CDC synchronization, and production Kubernetes (EKS) clusters with zero downtime.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -133,9 +130,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Architected production Agentic AI workflows and multi-agent orchestration pipelines
-                with LangChain and autonomous task routing, converting unstructured incoming data
-                into validated, idempotent system actions.
+                Built production Agentic AI workflows (LangChain, FastAPI) and RAG pipelines (Pinecone, pgvector) with prompt sanitization and idempotent execution.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -147,9 +142,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Implemented RAG (Retrieval-Augmented Generation) architectures utilizing Vector
-                Databases (Pinecone, pgvector) with hybrid semantic search, metadata filtering, and
-                contextual re-ranking.
+                Engineered deterministic state machines for service orders, normalized PostgreSQL schemas, and HIPAA-compliant RBAC controls.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -161,75 +154,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Built an Agentic AI email automation platform (Python, FastAPI, AWS SES,
-                EventBridge, S3) that ingests customer/vendor emails, sanitizes prompt injection,
-                classifies multi-intents, and executes idempotent domain actions with audit logging.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Designed normalized PostgreSQL schemas spanning 20–25+ relational tables, with
-                code-first GraphQL and NestJS microservices.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Architected distributed healthcare data warehouses spanning facilities across
-                Europe, America, and Australia with Apache Flink CDC/ETL synchronization.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Configured and managed production Kubernetes (EKS) clusters with Helm charts, HPA
-                autoscaling, custom ingress routing, and zero-downtime rolling deployments.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Engineered Linux host environments and container runtimes: tuned cgroups v2, kernel
-                sysctl parameters, process isolation, and systemd service daemons for
-                high-throughput I/O.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Implemented strict HIPAA-compliant security controls: encryption at rest and in
-                transit, comprehensive audit trails, and granular RBAC.
+                Tuned Linux host environments (cgroups v2, sysctl parameters, systemd daemons) for high-throughput containerized workloads.
               </span>
             </li>
           </ul>
@@ -240,23 +165,19 @@ export const Experience = (props: SectionProps) => {
             }`}
           >
             {[
-              'AI Agentic Flows',
-              'Agent Orchestration',
-              'RAG',
-              'Vector DB / Pinecone',
+              'Agentic AI',
+              'LangChain',
+              'RAG / Pinecone',
               'Node.js',
               'NestJS',
               'TypeScript',
-              'GraphQL',
               'PostgreSQL',
               'Python',
               'FastAPI',
               'Apache Flink',
-              'Redis',
-              'Docker',
               'Kubernetes / EKS',
-              'Helm',
-              'Linux (cgroups/systemd)',
+              'Docker',
+              'Linux (cgroups/sysctl)',
               'AWS',
               'HIPAA',
             ].map((tech) => (
@@ -337,8 +258,7 @@ export const Experience = (props: SectionProps) => {
             }`}
           >
             Led backend engineering for national-scale healthcare platforms serving 200+ health
-            posts across 50+ municipalities, automating clinical reporting and government health
-            data exchange.
+            posts across 50+ municipalities.
           </p>
 
           <ul
@@ -355,8 +275,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Built resilient REST APIs using Node.js and Express.js serving hundreds of healthcare
-                practitioners daily.
+                Built high-throughput Node.js/Express REST APIs and automated clinical health data exchange with government DHIS2.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -368,8 +287,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Engineered automated integration with DHIS2 for automated disease, demographic, and
-                clinical data submission to the Ministry of Health.
+                Designed clinical record modules (OPD, IMNCI, NCD) with optimized MongoDB aggregation pipelines and tuned PostgreSQL indexing.
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -381,35 +299,7 @@ export const Experience = (props: SectionProps) => {
                 [+]
               </span>
               <span>
-                Designed clinical modules for OPD, IMNCI, Safe Motherhood, Non-Communicable Diseases
-                (NCD), and STI tracking with MongoDB aggregation pipelines.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Maintained production Linux hosts, configuring systemd service units, Nginx
-                reverse proxies, SSL/TLS termination, and containerized Docker environments with
-                GitLab CI.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span
-                className={`font-bold font-mono text-xs mt-0.5 ${
-                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
-                }`}
-              >
-                [+]
-              </span>
-              <span>
-                Instituted database indexing strategies and query execution plan tuning in MongoDB
-                and PostgreSQL, eliminating query bottlenecks across clinical record search.
+                Maintained production Linux hosts, Nginx reverse proxies, Docker containerization, and automated GitLab CI pipelines.
               </span>
             </li>
           </ul>
@@ -427,11 +317,9 @@ export const Experience = (props: SectionProps) => {
               'Linux',
               'Docker',
               'Nginx',
-              'Systemd',
               'DHIS2',
               'GitLab CI',
               'REST APIs',
-              'Aggregation Pipelines',
             ].map((tech) => (
               <span
                 key={tech}
@@ -448,7 +336,8 @@ export const Experience = (props: SectionProps) => {
         </article>
 
         {/* SUB TIMELINE GRID (Older Roles & Academics) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* SUB TIMELINE GRID (Older Roles & Academics) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* Hajurbuwa.com */}
           <div
             className={`border-2 p-5 space-y-3 neo-shadow-black flex flex-col justify-between ${
@@ -484,8 +373,7 @@ export const Experience = (props: SectionProps) => {
                   isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-500'
                 }`}
               >
-                Engineered core features for a B2B vendor management platform, handling supplier
-                onboarding, catalog management, inventory dispatch, and tax calculations.
+                Engineered B2B vendor onboarding, catalog management, inventory dispatch, and tax calculations.
               </p>
             </div>
             <div
@@ -495,7 +383,7 @@ export const Experience = (props: SectionProps) => {
                   : 'border-stroke-black text-neutral-500'
               }`}
             >
-              Next.js &bull; React &bull; TypeScript &bull; Tailwind &bull; REST
+              Next.js &bull; TypeScript &bull; Tailwind &bull; REST
             </div>
           </div>
 
@@ -534,8 +422,7 @@ export const Experience = (props: SectionProps) => {
                   isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-500'
                 }`}
               >
-                Led delivery of 5 full-stack web applications from scratch, maintained 7 client
-                platforms, and managed deployments on AWS EC2, RDS, and S3.
+                Delivered 5 full-stack web applications and maintained 7 production client platforms on AWS.
               </p>
             </div>
             <div
@@ -545,7 +432,56 @@ export const Experience = (props: SectionProps) => {
                   : 'border-stroke-black text-neutral-500'
               }`}
             >
-              Node.js &bull; Express &bull; MongoDB &bull; AWS (EC2/S3/RDS)
+              Node.js &bull; Express &bull; MongoDB &bull; AWS
+            </div>
+          </div>
+
+          {/* AudioBee */}
+          <div
+            className={`border-2 p-5 space-y-3 neo-shadow-black flex flex-col justify-between ${
+              isDarkMode
+                ? 'bg-dark-surface border-dark-outline-variant'
+                : 'bg-white border-stroke-black'
+            }`}
+          >
+            <div className="space-y-2">
+              <div
+                className={`font-mono text-xs font-bold ${
+                  isDarkMode ? 'text-dark-outline' : 'text-neutral-500'
+                }`}
+              >
+                MAR 2020 – AUG 2020
+              </div>
+              <h4
+                className={`font-headline text-base sm:text-lg font-bold ${
+                  isDarkMode ? 'text-dark-on-surface' : 'text-on-surface'
+                }`}
+              >
+                Software Engineer Intern
+              </h4>
+              <div
+                className={`font-mono text-xs font-semibold ${
+                  isDarkMode ? 'text-dark-primary' : 'text-accent-cobalt'
+                }`}
+              >
+                AudioBee // Web &amp; Agile
+              </div>
+              <p
+                className={`font-sans text-xs leading-relaxed ${
+                  isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-500'
+                }`}
+              >
+                Built web pages/UI using HTML, CSS, JS, jQuery; assisted with bug fixes and Agile workflows.
+              </p>
+            </div>
+            <div
+              className={`font-mono text-[11px] pt-3 border-t-2 font-medium ${
+                isDarkMode
+                  ? 'border-dark-outline-variant text-dark-outline'
+                  : 'border-stroke-black text-neutral-500'
+              }`}
+            >
+              HTML5 &bull; CSS3 &bull; JS &bull; jQuery &bull; Agile
             </div>
           </div>
 
@@ -584,8 +520,7 @@ export const Experience = (props: SectionProps) => {
                   isDarkMode ? 'text-dark-on-surface-variant' : 'text-neutral-500'
                 }`}
               >
-                Rigorous foundation in data structures, algorithms, relational database
-                management, operating systems, and computer network architecture.
+                Rigorous foundation in data structures, algorithms, relational databases, and network architecture.
               </p>
             </div>
             <div
@@ -595,7 +530,7 @@ export const Experience = (props: SectionProps) => {
                   : 'border-stroke-black text-neutral-500'
               }`}
             >
-              DSA &bull; Distributed OS &bull; Network Protocols
+              DSA &bull; Distributed OS &bull; DBMS &bull; Networks
             </div>
           </div>
         </div>
