@@ -3,7 +3,7 @@ export const siteConfig = {
   title: 'Pratik Neupane | Senior Backend & Systems Engineer',
   description:
     'Senior Backend & Systems Engineer with 5+ years of production experience architecting distributed platforms, Agentic AI pipelines, deterministic state machines, and high-concurrency cloud systems.',
-  url: 'https://l3-h6.github.io',
+  url: 'https://pratikneupane.dev',
   ogImage: '/og-image.png',
   author: 'Pratik Neupane',
   links: {
