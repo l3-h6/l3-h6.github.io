@@ -10,12 +10,18 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
   description: siteConfig.description,
   keywords: [...siteConfig.keywords],
   authors: [{ name: siteConfig.author, url: siteConfig.url }],
   creator: siteConfig.author,
-  metadataBase: new URL(siteConfig.url),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -23,6 +29,33 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 2752,
+        height: 1536,
+        alt: siteConfig.title,
+        type: 'image/png',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+    creator: siteConfig.author,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   icons: {
     icon: '/favicon.ico',
