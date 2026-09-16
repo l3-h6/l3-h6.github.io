@@ -1,12 +1,10 @@
 # Pratik Neupane - Portfolio
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/pratikneupane/pratikneupane.github.io)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/l3-h6/l3-h6.github.io)
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience in the field of web development.
+Welcome to my personal portfolio! This project showcases my skills and experience in backend architecture, distributed systems, and agentic AI.
 
-Credits for the design goes to [Stefan](https://github.com/stefvndev)
-
-#### [Live Demo](https://pratikneupane.github.io)
+#### [Live Demo](https://l3-h6.github.io)
 
 ## Built with
 

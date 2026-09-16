@@ -1,0 +1,30 @@
+export const siteConfig = {
+  name: 'Pratik Neupane',
+  title: 'Pratik Neupane | Senior Backend & Systems Engineer',
+  description:
+    'Senior Backend & Systems Engineer with 5+ years of production experience architecting distributed platforms, Agentic AI pipelines, deterministic state machines, and high-concurrency cloud systems.',
+  url: 'https://l3-h6.github.io',
+  ogImage: '/og-image.png',
+  author: 'Pratik Neupane',
+  links: {
+    github: 'https://github.com/l3-h6',
+    linkedin: 'https://linkedin.com/in/pratikneupane',
+    email: 'pratikneupane@proton.me',
+  },
+  keywords: [
+    'Backend Engineer',
+    'Systems Engineering',
+    'Agentic AI',
+    'RAG',
+    'Vector DB',
+    'Pinecone',
+    'Kubernetes',
+    'Linux Internals',
+    'Node.js',
+    'TypeScript',
+    'Go',
+    'PostgreSQL',
+    'Redis',
+    'Distributed Systems',
+  ],
+} as const;

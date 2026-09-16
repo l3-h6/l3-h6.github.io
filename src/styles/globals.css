@@ -1,111 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=PT+Serif&family=Poppins:wght@300;400;700&family=Roboto+Mono:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Syne:wght@400;500;700;800&family=Ubuntu:wght@400;700&display=swap");
 :root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --primary-color: #0070f3;
+  --background-color: #f8f9fa;
+  --text-color: #0e0e10;
+  --primary-color: #1d4ed8;
 }
 
-[data-theme="dark"] {
-  --background-color: #1e1e1e;
-  --text-color: #ffffff;
-  --primary-color: #00aaff;
-}
-.image {
-  width: 35rem;
-  --webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  height: 28rem;
-  background-repeat: no-repeat;
-  background-image: url("../../public/images/pratik.jpeg");
-  animation: animate 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  border: 3px solid #2d2e32;
-}
-.font-syne {
-  font-family: "Syne", sans-serif;
-}
-.ubuntu {
-  font-family: "Ubuntu", sans-serif;
-}
-.poppins {
-    font-family: Poppins, sans-serif;
-}
-.manrope {
-  line-height: 24.6px;
-}
-.mulish {
-  /* font-family: 'Mulish', sans-serif; */
-  /* font-family: 'PT Sans', sans-serif; */
-  /* /* font-family: 'Poppins', sans-serif; */
-  line-height: 24px;
+.neo-shadow-black {
+  box-shadow: 3px 3px 0px #0e0e10;
 }
 
-@media screen and (max-width: 850px) {
-  .image {
-    width: 30rem;
-    height: 20rem;
-  }
+.neo-shadow-blue {
+  box-shadow: 3px 3px 0px #1d4ed8;
 }
-@media screen and (max-width: 768px) {
-  .image {
-    width: 24rem;
-    height: 20rem;
-  }
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px #0e0e10;
 }
-@media screen and (max-width: 500px) {
-  .image {
-    width: 22rem;
-    height: 18rem;
-  }
+
+.code-grid-bg {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 14, 16, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 14, 16, 0.06) 1px, transparent 1px);
 }
-@media screen and (max-width: 400px) {
-  .image {
-    width: 18rem;
-    height: 18rem;
-  }
+
+.dark .code-grid-bg {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(67, 70, 85, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(67, 70, 85, 0.15) 1px, transparent 1px);
 }
-@media screen and (max-width: 300px) {
-  .image {
-    width: 15rem;
-    height: 16rem;
-  }
+
+.dark .neo-shadow-black {
+  box-shadow: 3px 3px 0px #000000;
 }
-@keyframes animate {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
+
+.dark .neo-shadow-blue {
+  box-shadow: 3px 3px 0px #2563eb;
 }
-.svg {
-  fill: currentColor;
-  height: auto;
-  transform-origin: center;
-  width: 32%;
-  position: absolute;
-  top: 17rem;
-  right: -1rem;
-  background-color: white;
-  border-radius: 50%;
-  animation: rotate 15s linear infinite;
+
+.dark .neo-shadow-primary {
+  box-shadow: 3px 3px 0px #b4c5ff;
 }
-.rotate {
-  color: green;
+
+.dark .neo-shadow-sm {
+  box-shadow: 2px 2px 0px #000000;
 }
-@keyframes rotate {
-  to {
-    rotate: 360deg;
-  }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #0e0e10;
+  border-radius: 0px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
 }

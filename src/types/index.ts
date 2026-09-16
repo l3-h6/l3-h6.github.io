@@ -11,3 +11,7 @@ export type IconContainerProps = {
   isDarkMode: boolean;
   icon: any;
 };
+
+export type SectionProps = {
+  isDarkMode: boolean;
+};
