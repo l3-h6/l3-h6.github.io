@@ -19,7 +19,7 @@ export const Header = (props: HeaderProps) => {
             : 'bg-white border-stroke-black text-on-surface'
         }`}
       >
-        <div className="flex justify-between items-center w-full px-4 sm:px-6 py-3.5 max-w-[1280px] mx-auto">
+        <div className="flex justify-between items-center w-full px-4 sm:px-6 py-3.5 max-w-[1680px] mx-auto">
           {/* Logo & Thread Badge */}
           <div className="flex items-center gap-3">
             <a
@@ -110,6 +110,7 @@ export const Header = (props: HeaderProps) => {
             </button>
 
             {/* Dark/Light Mode Button */}
+            {/*
             <button
               onClick={handleDarkMode}
               className={`p-2 border-2 transition-all duration-150 active:translate-x-[2px] active:translate-y-[2px] neo-shadow-sm ${
@@ -125,7 +126,7 @@ export const Header = (props: HeaderProps) => {
               ) : (
                 <Moon className="w-4 h-4" />
               )}
-            </button>
+            </button> */}
 
             {/* Uplink CTA */}
             <a
